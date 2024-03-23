@@ -148,3 +148,10 @@ Manage more than one IPs
 ## Extra notes:
 - Remember to allow loopback interface traffics.
 - When you create a custom chain, you can jump into it using `-j custom_chain` target. After the user-defined chain is traversed, control returns to the calling built-in chain, and matching continues from the next rule in the calling chain, unless the user-defined chain matched and took a terminating action on the packet. The `RETURN` target in a rule of a custom-chain makes processing resume back in the chain that called the custom chain. It can also be used inside a built-in chain. In this case no other rule will be inspected and packet executes the default `POLICY`. If you want to stop using your custom chain temporarily, you can simply delete the jump from the INPUT chain.
+
+  ## Examples:
+
+  <img src="IPtables.jpg" width="400">
+  
+
+  <img src="IPtables 2.jpg" width="400">
